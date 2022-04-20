@@ -1,0 +1,71 @@
+{
+    "name": "lagoon-examples/drupal10-base",
+    "description": "Project template for Drupal 10 projects with MariaDB, hosted on Lagoon",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "The Lagoon Authors",
+            "homepage": "https://github.com/uselagoon",
+            "email": "uselagoon@amazee.io"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "amazeeio/drupal_integrations": "0.3.7",
+        "composer/installers": "2.1.1",
+        "cweagans/composer-patches": "1.7.2",
+        "drupal/core-composer-scaffold": "10.0.0-alpha3",
+        "drupal/core-project-message": "10.0.0-alpha3",
+        "drupal/core-recommended": "10.0.0-alpha3",
+        "drush/drush": "11.0.9",
+        "zaporylie/composer-drupal-optimizations": "1.2.0"
+    },
+    "require-dev": {
+        "drupal/core-dev-pinned": "10.0.0-alpha3"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config":{
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
+        },
+        "drupal-scaffold": {
+            "allowed-packages": [
+                "amazeeio/drupal_integrations"
+            ],
+            "file-mapping": {
+                "[web-root]/sites/default/all.settings.php": "assets/all.settings.php"
+            },
+            "locations": {
+                "web-root": "web/"
+            }
+        }
+    }
+}

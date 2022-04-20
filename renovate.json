@@ -1,0 +1,34 @@
+{
+  "baseBranches": [
+    "main"
+  ],
+  "extends": ["config:base"],
+  "automerge": true,
+  "automergeType": "pr",
+  "dependencyDashboard": true,
+  "prHourlyLimit": 0,
+  "packageRules": [
+    {
+      "datasources": ["packagist"],
+      "updateTypes": ["patch", "minor"],
+      "packageNames": [
+        "drupal/core-dev-pinned",
+        "drupal/core-recommended",
+        "drupal/core-composer-scaffold",
+        "drupal/core-project-message"
+      ],
+      "groupName": "Drupal Core"
+    },
+    {
+      "datasources": ["packagist"],
+      "updateTypes": ["major"],
+      "packageNames": [
+        "drupal/core-dev-pinned",
+        "drupal/core-recommended",
+        "drupal/core-composer-scaffold",
+        "drupal/core-project-message"
+      ],
+      "enabled": false
+    }
+  ]
+}
