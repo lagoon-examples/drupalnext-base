@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - 'main'
-      - 'php81'
   pull_request:
     branches:
       - 'main'
@@ -28,15 +27,6 @@ jobs:
         lando version
         node -v
         yarn -v
-    - name: get user ids
-      run: |
-        ls -al .
-        whoami
-        id
-        id -u
-        id -g
-        getent group $(id -g)
-        groups
     - name: Update codebase to follow CI configuration
       run: |
         sed -i -e "/###/d" docker-compose.yml

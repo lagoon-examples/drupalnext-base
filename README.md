@@ -8,23 +8,23 @@ dependencies with [Composer](https://getcomposer.org/). It is based on the [orig
 ## Included Services
 
 This example contains the following services:
-* Drupal 10.2
-* PHP 8.0
+* Drupal 10 (prerelease versions)
+* PHP 8.1
 * NGINX
-* MariaDB 10.5
+* MariaDB 10.6
 
 To see similar projects with additional services, please visit https://github.com/lagoon-examples and to find out more about the services, please visit the documentation at https://docs.lagoon.sh/lagoon
 
 ## Requirements
 
 * [docker](https://docs.docker.com/install/)
-* [pygmy-go](https://www.github.com/fubarhouse/pygmy-go)
+* [pygmy](https://www.github.com/pygmystack/pygmy)
 
 **OR**
 
 * [Lando](https://docs.lando.dev/basics/installation.html#system-requirements)
 
-## Local environment setup - pygmy-go
+## Local environment setup - pygmy
 
 1. Checkout this project repo and confirm the path is in Docker's file sharing config - https://docs.docker.com/docker-for-mac/#file-sharing
 
