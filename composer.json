@@ -20,14 +20,11 @@
         "amazeeio/drupal_integrations": "0.3.7",
         "composer/installers": "2.1.1",
         "cweagans/composer-patches": "1.7.2",
-        "drupal/core-composer-scaffold": "10.0.0-alpha5",
-        "drupal/core-project-message": "10.0.0-alpha5",
-        "drupal/core-recommended": "10.0.0-alpha5",
+        "drupal/core-composer-scaffold": "10.0.0-alpha6",
+        "drupal/core-project-message": "10.0.0-alpha6",
+        "drupal/core-recommended": "10.0.0-alpha6",
         "drush/drush": "11.1.1",
         "zaporylie/composer-drupal-optimizations": "1.2.0"
-    },
-    "require-dev": {
-        "drupal/core-dev-pinned": "10.0.0-alpha5"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -69,5 +66,8 @@
                 "web-root": "web/"
             }
         }
+    },
+    "require-dev": {
+        "drupal/core-dev-pinned": "10.0.0-alpha6"
     }
 }
