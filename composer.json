@@ -18,7 +18,7 @@
     ],
     "require": {
         "amazeeio/drupal_integrations": "0.3.7",
-        "composer/installers": "2.1.1",
+        "composer/installers": "2.2.0",
         "cweagans/composer-patches": "1.7.2",
         "drupal/core-composer-scaffold": "10.0.0-alpha7",
         "drupal/core-project-message": "10.0.0-alpha7",
