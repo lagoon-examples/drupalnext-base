@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31bc468b5fc8c076ecdb6ba1efde1a58",
+    "content-hash": "02d19fde402bf5b1deb24c9b97f83767",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1197,16 +1197,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "10.0.0-beta1",
+            "version": "10.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "85d21c9eb311e4b8a1bea3611c6a400b85a37ffc"
+                "reference": "a6e1f021a173db50cbcd19da81214b3b33ed1c54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/85d21c9eb311e4b8a1bea3611c6a400b85a37ffc",
-                "reference": "85d21c9eb311e4b8a1bea3611c6a400b85a37ffc",
+                "url": "https://api.github.com/repos/drupal/core/zipball/a6e1f021a173db50cbcd19da81214b3b33ed1c54",
+                "reference": "a6e1f021a173db50cbcd19da81214b3b33ed1c54",
                 "shasum": ""
             },
             "require": {
@@ -1246,7 +1246,7 @@
                 "symfony/serializer": "^6.1",
                 "symfony/validator": "^6.1",
                 "symfony/yaml": "^6.1",
-                "twig/twig": "^3.4"
+                "twig/twig": "^3.4.3"
             },
             "conflict": {
                 "drush/drush": "<8.1.10"
@@ -1345,13 +1345,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/10.0.0-beta1"
+                "source": "https://github.com/drupal/core/tree/10.0.0-beta2"
             },
-            "time": "2022-09-16T19:36:57+00:00"
+            "time": "2022-09-29T14:12:40+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.0.0-beta1",
+            "version": "10.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -1395,13 +1395,13 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.0.0-beta1"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.0.0-beta2"
             },
             "time": "2022-07-01T08:33:05+00:00"
         },
         {
             "name": "drupal/core-project-message",
-            "version": "10.0.0-beta1",
+            "version": "10.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -1436,22 +1436,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/10.0.0-beta1"
+                "source": "https://github.com/drupal/core-project-message/tree/10.0.0-beta2"
             },
             "time": "2022-07-01T08:33:05+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "10.0.0-beta1",
+            "version": "10.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "958322d5f2740f85e966245ae576cc4d121763ca"
+                "reference": "c817c00619d7aaf41369e0d3b8065beeb9950369"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/958322d5f2740f85e966245ae576cc4d121763ca",
-                "reference": "958322d5f2740f85e966245ae576cc4d121763ca",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/c817c00619d7aaf41369e0d3b8065beeb9950369",
+                "reference": "c817c00619d7aaf41369e0d3b8065beeb9950369",
                 "shasum": ""
             },
             "require": {
@@ -1459,7 +1459,7 @@
                 "composer/semver": "~3.3.2",
                 "doctrine/annotations": "~1.13.3",
                 "doctrine/lexer": "~1.2.3",
-                "drupal/core": "10.0.0-beta1",
+                "drupal/core": "10.0.0-beta2",
                 "egulias/email-validator": "~3.2.1",
                 "guzzlehttp/guzzle": "~7.5.0",
                 "guzzlehttp/promises": "~1.5.2",
@@ -1502,7 +1502,7 @@
                 "symfony/validator": "~v6.1.4",
                 "symfony/var-dumper": "~v6.1.3",
                 "symfony/yaml": "~v6.1.4",
-                "twig/twig": "~v3.4.2"
+                "twig/twig": "~v3.4.3"
             },
             "conflict": {
                 "webflo/drupal-core-strict": "*"
@@ -1514,9 +1514,9 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/10.0.0-beta1"
+                "source": "https://github.com/drupal/core-recommended/tree/10.0.0-beta2"
             },
-            "time": "2022-09-16T19:36:57+00:00"
+            "time": "2022-09-29T14:12:40+00:00"
         },
         {
             "name": "drush/drush",
@@ -5738,16 +5738,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.4.2",
+            "version": "v3.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "e07cdd3d430cd7e453c31b36eb5ad6c0c5e43077"
+                "reference": "c38fd6b0b7f370c198db91ffd02e23b517426b58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/e07cdd3d430cd7e453c31b36eb5ad6c0c5e43077",
-                "reference": "e07cdd3d430cd7e453c31b36eb5ad6c0c5e43077",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/c38fd6b0b7f370c198db91ffd02e23b517426b58",
+                "reference": "c38fd6b0b7f370c198db91ffd02e23b517426b58",
                 "shasum": ""
             },
             "require": {
@@ -5798,7 +5798,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.4.2"
+                "source": "https://github.com/twigphp/Twig/tree/v3.4.3"
             },
             "funding": [
                 {
@@ -5810,7 +5810,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-12T06:47:24+00:00"
+            "time": "2022-09-28T08:42:51+00:00"
         },
         {
             "name": "webflo/drupal-finder",
@@ -6950,16 +6950,16 @@
         },
         {
             "name": "drupal/core-dev-pinned",
-            "version": "10.0.0-beta1",
+            "version": "10.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev-pinned.git",
-                "reference": "42b5bbf57ac06afb91d1be8b6fe8e6874a0fb464"
+                "reference": "06ed66e04ca07e8cc5548dfe37601802731d58e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-dev-pinned/zipball/42b5bbf57ac06afb91d1be8b6fe8e6874a0fb464",
-                "reference": "42b5bbf57ac06afb91d1be8b6fe8e6874a0fb464",
+                "url": "https://api.github.com/repos/drupal/core-dev-pinned/zipball/06ed66e04ca07e8cc5548dfe37601802731d58e3",
+                "reference": "06ed66e04ca07e8cc5548dfe37601802731d58e3",
                 "shasum": ""
             },
             "require": {
@@ -6976,7 +6976,7 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "v0.7.2",
                 "doctrine/instantiator": "1.4.1",
                 "drupal/coder": "8.3.16",
-                "drupal/core": "10.0.0-beta1",
+                "drupal/core": "10.0.0-beta2",
                 "instaclick/php-webdriver": "1.4.15",
                 "justinrainbow/json-schema": "5.2.12",
                 "mglaman/phpstan-drupal": "1.1.25",
@@ -7043,9 +7043,9 @@
             ],
             "description": "Pinned require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev-pinned/tree/10.0.0-beta1"
+                "source": "https://github.com/drupal/core-dev-pinned/tree/10.0.0-beta2"
             },
-            "time": "2022-09-16T19:36:57+00:00"
+            "time": "2022-09-29T14:12:40+00:00"
         },
         {
             "name": "instaclick/php-webdriver",
