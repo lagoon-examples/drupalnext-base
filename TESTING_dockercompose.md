@@ -45,8 +45,8 @@ docker-compose exec -T cli bash -c "env | grep LAGOON=" | grep cli-drupal
 docker-compose exec -T cli bash -c "env" | grep LAGOON_ROUTE | grep drupal10-base.docker.amazee.io
 docker-compose exec -T cli bash -c "env" | grep LAGOON_ENVIRONMENT_TYPE | grep development
 
-# Should be running PHP 8.1
-docker-compose exec -T cli bash -c "php -v" | grep "PHP 8.1"
+# Should be running PHP 8
+docker-compose exec -T cli bash -c "php -v" | grep "PHP 8"
 
 # Should have composer
 docker-compose exec -T cli bash -c "composer --version"

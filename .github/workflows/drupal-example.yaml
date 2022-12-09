@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'main'
+      - 'php82'
   pull_request:
     branches:
       - 'main'
