@@ -27,13 +27,15 @@
         "drush/drush": "11.3.2",
         "zaporylie/composer-drupal-optimizations": "1.2.0"
     },
+    "require-dev": {
+        "drupal/core-dev-pinned": "10.0.0-rc2"
+    },
     "conflict": {
         "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config":{
-        "platform": {"php": "8.1.5"},
         "sort-packages": true,
         "allow-plugins": {
             "composer/installers": true,
@@ -67,8 +69,5 @@
                 "web-root": "web/"
             }
         }
-    },
-    "require-dev": {
-        "drupal/core-dev-pinned": "10.0.0-rc2"
     }
 }
