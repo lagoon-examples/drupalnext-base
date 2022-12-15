@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8084c089e6a767e4b13ce64a1f506a55",
+    "content-hash": "ae3564eb748c59c7b7a6e9e3a626b5e4",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -1198,16 +1198,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "10.0.0-rc3",
+            "version": "10.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "c91e3be9e91f3d1a8f2ac9751b902f523cb1fab3"
+                "reference": "5f91bde296ae3a68c448fc35b47bb3eacb700e2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/c91e3be9e91f3d1a8f2ac9751b902f523cb1fab3",
-                "reference": "c91e3be9e91f3d1a8f2ac9751b902f523cb1fab3",
+                "url": "https://api.github.com/repos/drupal/core/zipball/5f91bde296ae3a68c448fc35b47bb3eacb700e2b",
+                "reference": "5f91bde296ae3a68c448fc35b47bb3eacb700e2b",
                 "shasum": ""
             },
             "require": {
@@ -1350,13 +1350,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/10.0.0-rc3"
+                "source": "https://github.com/drupal/core/tree/10.0.0"
             },
-            "time": "2022-12-09T13:01:05+00:00"
+            "time": "2022-12-15T17:27:51+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.0.0-rc3",
+            "version": "10.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -1400,13 +1400,13 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.0.0-rc3"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.0.0"
             },
             "time": "2022-07-01T08:33:05+00:00"
         },
         {
             "name": "drupal/core-project-message",
-            "version": "10.0.0-rc3",
+            "version": "10.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -1441,22 +1441,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/10.0.0-rc3"
+                "source": "https://github.com/drupal/core-project-message/tree/10.0.0"
             },
             "time": "2022-07-01T08:33:05+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "10.0.0-rc3",
+            "version": "10.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "e4582a46a00fb3f623084c80f62ee91ca2c5b7fd"
+                "reference": "21e071da21d0ba2f3be6b0ca6af6944f0cf45d31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/e4582a46a00fb3f623084c80f62ee91ca2c5b7fd",
-                "reference": "e4582a46a00fb3f623084c80f62ee91ca2c5b7fd",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/21e071da21d0ba2f3be6b0ca6af6944f0cf45d31",
+                "reference": "21e071da21d0ba2f3be6b0ca6af6944f0cf45d31",
                 "shasum": ""
             },
             "require": {
@@ -1464,7 +1464,7 @@
                 "composer/semver": "~3.3.2",
                 "doctrine/annotations": "~1.13.3",
                 "doctrine/lexer": "~1.2.3",
-                "drupal/core": "10.0.0-rc3",
+                "drupal/core": "10.0.0",
                 "egulias/email-validator": "~3.2.1",
                 "guzzlehttp/guzzle": "~7.5.0",
                 "guzzlehttp/promises": "~1.5.2",
@@ -1520,9 +1520,9 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/10.0.0-rc3"
+                "source": "https://github.com/drupal/core-recommended/tree/10.0.0"
             },
-            "time": "2022-12-09T13:01:05+00:00"
+            "time": "2022-12-15T17:27:51+00:00"
         },
         {
             "name": "drupal/lagoon_logs",
@@ -7088,16 +7088,16 @@
         },
         {
             "name": "drupal/core-dev-pinned",
-            "version": "10.0.0-rc3",
+            "version": "10.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev-pinned.git",
-                "reference": "5df1c12fe18ec46141e4e331b646668c5448daf6"
+                "reference": "3d199e7c09f830796080747f1d55ba6c7a608ac9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-dev-pinned/zipball/5df1c12fe18ec46141e4e331b646668c5448daf6",
-                "reference": "5df1c12fe18ec46141e4e331b646668c5448daf6",
+                "url": "https://api.github.com/repos/drupal/core-dev-pinned/zipball/3d199e7c09f830796080747f1d55ba6c7a608ac9",
+                "reference": "3d199e7c09f830796080747f1d55ba6c7a608ac9",
                 "shasum": ""
             },
             "require": {
@@ -7114,7 +7114,7 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "v0.7.2",
                 "doctrine/instantiator": "1.4.1",
                 "drupal/coder": "8.3.16",
-                "drupal/core": "10.0.0-rc3",
+                "drupal/core": "10.0.0",
                 "instaclick/php-webdriver": "1.4.16",
                 "justinrainbow/json-schema": "5.2.12",
                 "mglaman/phpstan-drupal": "1.1.25",
@@ -7181,9 +7181,9 @@
             ],
             "description": "Pinned require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev-pinned/tree/10.0.0-rc3"
+                "source": "https://github.com/drupal/core-dev-pinned/tree/10.0.0"
             },
-            "time": "2022-12-09T13:01:05+00:00"
+            "time": "2022-12-15T17:27:51+00:00"
         },
         {
             "name": "instaclick/php-webdriver",
