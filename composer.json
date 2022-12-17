@@ -25,6 +25,7 @@
         "drupal/core-recommended": "10.0.0",
         "drupal/lagoon_logs": "2.1.1",
         "drush/drush": "11.4.0",
+        "mglaman/composer-drupal-lenient": "^1.0",
         "zaporylie/composer-drupal-optimizations": "1.2.0"
     },
     "require-dev": {
@@ -44,7 +45,8 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "mglaman/composer-drupal-lenient": true
         }
     },
     "extra": {
@@ -67,6 +69,10 @@
             },
             "locations": {
                 "web-root": "web/"
+            }
+        },
+        "drupal-lenient": {
+            "allowed-list": {
             }
         }
     }
