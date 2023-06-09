@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78188a643ab24e1eea583e44a805b7c9",
+    "content-hash": "2a3f6cd09cde2425e45821aa25347683",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -750,16 +750,16 @@
         },
         {
             "name": "consolidation/self-update",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/self-update.git",
-                "reference": "714b09fdf0513f83292874bb12de0566066040c2"
+                "reference": "972a1016761c9b63314e040836a12795dff6953a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/self-update/zipball/714b09fdf0513f83292874bb12de0566066040c2",
-                "reference": "714b09fdf0513f83292874bb12de0566066040c2",
+                "url": "https://api.github.com/repos/consolidation/self-update/zipball/972a1016761c9b63314e040836a12795dff6953a",
+                "reference": "972a1016761c9b63314e040836a12795dff6953a",
                 "shasum": ""
             },
             "require": {
@@ -799,9 +799,9 @@
             "description": "Provides a self:update command for Symfony Console applications.",
             "support": {
                 "issues": "https://github.com/consolidation/self-update/issues",
-                "source": "https://github.com/consolidation/self-update/tree/2.1.0"
+                "source": "https://github.com/consolidation/self-update/tree/2.2.0"
             },
-            "time": "2023-02-21T19:33:55+00:00"
+            "time": "2023-03-18T01:37:41+00:00"
         },
         {
             "name": "consolidation/site-alias",
@@ -1579,16 +1579,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "12.0.1",
+            "version": "12.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "e54107f1fe599ca312db18c61383ad14e995be76"
+                "reference": "c2b51cf5c0b537cc989513ccaa05e3e229104d4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/e54107f1fe599ca312db18c61383ad14e995be76",
-                "reference": "e54107f1fe599ca312db18c61383ad14e995be76",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/c2b51cf5c0b537cc989513ccaa05e3e229104d4f",
+                "reference": "c2b51cf5c0b537cc989513ccaa05e3e229104d4f",
                 "shasum": ""
             },
             "require": {
@@ -1710,7 +1710,7 @@
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "security": "https://github.com/drush-ops/drush/security/advisories",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/12.0.1"
+                "source": "https://github.com/drush-ops/drush/tree/12.0.2"
             },
             "funding": [
                 {
@@ -1718,7 +1718,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-07T13:14:56+00:00"
+            "time": "2023-06-09T13:08:27+00:00"
         },
         {
             "name": "egulias/email-validator",
