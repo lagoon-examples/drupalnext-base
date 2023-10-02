@@ -11,8 +11,11 @@ x-environment:
     LAGOON_ROUTE: &default-url http://${COMPOSE_PROJECT_NAME:-drupal10-base}.docker.amazee.io
     # Uncomment if you like to have the system behave like in production
     #LAGOON_ENVIRONMENT_TYPE: production
-    # Uncomment to enable xdebug and then restart via `docker-compose up -d`
+    # Uncomment to enable Xdebug and then restart via `docker-compose up -d`
     #XDEBUG_ENABLE: "true"
+    # Uncomment to enable Xdebug logging to `/tmp/xdebug.log` within the
+    # containers. This is useful for debugging Xdebug.
+    #XDEBUG_LOG: "true"
 
 x-user:
   &default-user
