@@ -101,7 +101,7 @@ docker-compose exec -T nginx bash -c "echo banana > /app/web/dumpy.sql"
 docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/dumpy.sql" | grep "HTTP/1.1 404"
 
 # Should block random PHP files from executing
-docker-compose exec -T nginx bash -c "echo '<?php phpinfo();?>' > /app/web/info.php"
+docker-compose exec -T nginx bash -c "echo PD9waHAgcGhwaW5mbygpOz8+ | base64 -d > /app/web/info.php"
 docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/info.php" | grep "HTTP/1.1 404"
 
 # Should be able to db-export and db-import the database
