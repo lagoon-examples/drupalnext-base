@@ -1,4 +1,4 @@
-name: drupal10-base
+name: drupal11-base
 recipe: lagoon
 config:
   flavor: drupal

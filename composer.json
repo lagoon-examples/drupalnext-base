@@ -1,5 +1,5 @@
 {
-    "name": "lagoon-examples/drupal10-base",
+    "name": "lagoon-examples/drupal11-base",
     "description": "Project template for Drupal 10 projects with MariaDB, hosted on Lagoon",
     "type": "project",
     "license": "GPL-2.0-or-later",
@@ -12,6 +12,10 @@
     ],
     "repositories": [
         {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/issue/lagoon_logs-3446110.git"
+        },
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
@@ -20,15 +24,15 @@
         "amazeeio/drupal_integrations": "0.4.0",
         "composer/installers": "2.2.0",
         "cweagans/composer-patches": "1.7.3",
-        "drupal/core-composer-scaffold": "10.2.6",
-        "drupal/core-project-message": "10.2.6",
-        "drupal/core-recommended": "10.2.6",
-        "drupal/lagoon_logs": "3.0.0",
-        "drush/drush": "12.5.2",
+        "drupal/core-composer-scaffold": "11.0.0-alpha1",
+        "drupal/core-project-message": "11.0.0-alpha1",
+        "drupal/core-recommended": "11.0.0-alpha1",
+        "drupal/lagoon_logs": "d10-onwards-dev",
+        "drush/drush": "13.x-dev",
         "zaporylie/composer-drupal-optimizations": "1.2.0"
     },
     "require-dev": {
-        "drupal/core-dev-pinned": "10.2.6"
+        "drupal/core-dev-pinned": "11.0.0-alpha1"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -44,7 +48,8 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "php-http/discovery": true
         }
     },
     "extra": {

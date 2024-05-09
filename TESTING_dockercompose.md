@@ -18,7 +18,7 @@ docker-compose down
 docker-compose build && docker-compose up -d
 
 # Ensure mariadb pod is ready to connect
-docker run --rm --net drupal10-base_default amazeeio/dockerize dockerize -wait tcp://mariadb:3306 -timeout 1m
+docker run --rm --net drupal11-base_default amazeeio/dockerize dockerize -wait tcp://mariadb:3306 -timeout 1m
 ```
 
 Verification commands
@@ -33,16 +33,16 @@ docker-compose exec -T cli bash -c "drush cr -y"
 docker-compose exec -T cli bash -c "drush status" | grep "Drupal bootstrap" | grep "Successful"
 
 # Should have all the services we expect
-docker ps --filter label=com.docker.compose.project=drupal10-base | grep Up | grep drupal10-base_nginx_1
-docker ps --filter label=com.docker.compose.project=drupal10-base | grep Up | grep drupal10-base_mariadb_1
-docker ps --filter label=com.docker.compose.project=drupal10-base | grep Up | grep drupal10-base_php_1
-docker ps --filter label=com.docker.compose.project=drupal10-base | grep Up | grep drupal10-base_cli_1
+docker ps --filter label=com.docker.compose.project=drupal11-base | grep Up | grep drupal11-base_nginx_1
+docker ps --filter label=com.docker.compose.project=drupal11-base | grep Up | grep drupal11-base_mariadb_1
+docker ps --filter label=com.docker.compose.project=drupal11-base | grep Up | grep drupal11-base_php_1
+docker ps --filter label=com.docker.compose.project=drupal11-base | grep Up | grep drupal11-base_cli_1
 
 # Should ssh against the cli container by default
 docker-compose exec -T cli bash -c "env | grep LAGOON=" | grep cli-drupal
 
 # Should have the correct environment set
-docker-compose exec -T cli bash -c "env" | grep LAGOON_ROUTE | grep drupal10-base.docker.amazee.io
+docker-compose exec -T cli bash -c "env" | grep LAGOON_ROUTE | grep drupal11-base.docker.amazee.io
 docker-compose exec -T cli bash -c "env" | grep LAGOON_ENVIRONMENT_TYPE | grep development
 
 # Should be running PHP 8
