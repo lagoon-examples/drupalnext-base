@@ -1,4 +1,4 @@
-Lando Drupal 10 base - php8.1, nginx, mariadb
+Lando Drupal 10 base - php8.3, nginx, mariadb
 =============================================
 
 This example exists primarily to test the following documentation:
@@ -46,8 +46,8 @@ lando ssh -c "env | grep LAGOON=" | grep cli-drupal
 lando ssh -c "env" | grep LAGOON_ROUTE | grep drupal10-base.lndo.site
 lando ssh -c "env" | grep LAGOON_ENVIRONMENT_TYPE | grep development
 
-# Should be running PHP 8.1
-lando ssh -c "php -v" | grep "PHP 8.1"
+# Should be running PHP 8.3
+lando ssh -c "php -v" | grep "PHP 8.3"
 
 # Should have composer
 lando composer --version

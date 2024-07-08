@@ -1,4 +1,4 @@
-Docker Compose Drupal 10 base - php8.1, nginx, mariadb
+Docker Compose Drupal 10 base - php8.3, nginx, mariadb
 ======================================================
 
 This is a docker-compose version of the Lando example tests:
@@ -45,8 +45,8 @@ docker-compose exec -T cli bash -c "env | grep LAGOON=" | grep cli-drupal
 docker-compose exec -T cli bash -c "env" | grep LAGOON_ROUTE | grep drupal10-base.docker.amazee.io
 docker-compose exec -T cli bash -c "env" | grep LAGOON_ENVIRONMENT_TYPE | grep development
 
-# Should be running PHP 8
-docker-compose exec -T cli bash -c "php -v" | grep "PHP 8"
+# Should be running PHP 8.3
+docker-compose exec -T cli bash -c "php -v" | grep "PHP 8.3"
 
 # Should have composer
 docker-compose exec -T cli bash -c "composer --version"
@@ -67,7 +67,42 @@ docker-compose exec -T cli bash -c "node --version"
 docker-compose exec -T cli bash -c "yarn --version"
 
 # Should have a running Drupal 10 site served by nginx on port 8080
-docker-compose exec -T cli bash -c "curl -kL http://nginx:8080" | grep "Drush Site-Install"
+docker-compose exec -T cli bash -c "curl -skL http://nginx:8080" | grep "Drush Site-Install"
+
+# Should have index.php redirection rules
+docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/index.php/node" | grep "HTTP/1.1 301"
+docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/index.php/node" | grep "Location: http://nginx/node"
+docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/index.php/node/1" | grep "HTTP/1.1 301"
+docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/index.php/node/1" | grep "Location: http://nginx/node/1"
+docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/index.php/node/1?query=true" | grep "HTTP/1.1 301"
+docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/index.php/node/1?query=true" | grep "Location: http://nginx/node/1?query=true"
+
+# Should block random text files
+docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/INSTALL.txt" | grep "HTTP/1.1 404"
+docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/README.md" | grep "HTTP/1.1 404"
+docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/sites/README.txt" | grep "HTTP/1.1 404"
+
+# Should not block text files in public files
+docker-compose exec -T nginx bash -c "echo banana > /app/web/sites/default/files/test.txt"
+docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/sites/default/files/test.txt" | grep "HTTP/1.1 200"
+
+# Should allow .well-known static files
+docker-compose exec -T nginx bash -c "mkdir -p /app/web/.well-known/"
+docker-compose exec -T nginx bash -c "echo banana > /app/web/.well-known/apple-developer-merchantid-domain-association"
+docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/.well-known/apple-developer-merchantid-domain-association" | grep "HTTP/1.1 200"
+
+# Should block other dot files.
+docker-compose exec -T nginx bash -c "mkdir -p /app/web/.aws/"
+docker-compose exec -T nginx bash -c "echo banana > /app/web/.aws/credentials.yml"
+docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/.aws/credentials.yml" | grep "HTTP/1.1 404"
+
+# Should block database dump downloads
+docker-compose exec -T nginx bash -c "echo banana > /app/web/dumpy.sql"
+docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/dumpy.sql" | grep "HTTP/1.1 404"
+
+# Should block random PHP files from executing
+docker-compose exec -T nginx bash -c "echo PD9waHAgcGhwaW5mbygpOz8+ | base64 -d > /app/web/info.php"
+docker-compose exec -T cli bash -c "curl -sIk http://nginx:8080/info.php" | grep "HTTP/1.1 404"
 
 # Should be able to db-export and db-import the database
 docker-compose exec -T cli bash -c "drush sql-dump --result-file /app/test.sql"

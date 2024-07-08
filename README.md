@@ -3,13 +3,13 @@
 This template includes everything necessary to run on [Lagoon](https://www.github.com/uselagoon/lagoon) (in both the local development environments or on hosted Lagoon clusters.)
 
 This project template should provide a kickstart for managing your site
-dependencies with [Composer](https://getcomposer.org/). It is based on the [original Drupal Composer Template](https://github.com/drupal-composer/drupal-project), 
+dependencies with [Composer](https://getcomposer.org/). It is based on the [original Drupal Composer Template](https://github.com/drupal-composer/drupal-project),
 
 ## Included Services
 
 This example contains the following services:
 * Drupal 10 (prerelease versions)
-* PHP 8.1
+* PHP 8.3
 * NGINX
 * MariaDB 10.6
 
@@ -73,7 +73,7 @@ lando drush si -y
 ```
 
 6. Visit the new site @ `http://drupal10-base.lndo.site`
- 
+
 7. For more information on how to configure your site, check out the [documentation](https://docs.lando.dev/config/lagoon.html).
 
 ## What does the template do?
@@ -93,7 +93,7 @@ When installing the given `composer.json` some tasks are taken care of:
 
 ## Updating Drupal Core
 
-Follow the steps below to update your core files. Scaffolding is managed by Drupal core. See the `assets/` directory for more information. 
+Follow the steps below to update your core files. Scaffolding is managed by Drupal core. See the `assets/` directory for more information.
 
 1. Run `composer update drupal/core-recommended drupal/core-dev-pinned --with-dependencies`
 
