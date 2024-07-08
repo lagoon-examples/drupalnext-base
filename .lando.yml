@@ -1,4 +1,4 @@
-name: drupal11-base
+name: drupalnext-base
 recipe: lagoon
 config:
   flavor: drupal

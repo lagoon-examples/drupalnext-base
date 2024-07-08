@@ -1,6 +1,6 @@
 {
-    "name": "lagoon-examples/drupal11-base",
-    "description": "Project template for Drupal 10 projects with MariaDB, hosted on Lagoon",
+    "name": "lagoon-examples/drupalnext-base",
+    "description": "Project template for Drupal projects with MariaDB, hosted on Lagoon",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -12,10 +12,6 @@
     ],
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://git.drupalcode.org/issue/lagoon_logs-3446110.git"
-        },
-        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
@@ -24,15 +20,13 @@
         "amazeeio/drupal_integrations": "0.4.0",
         "composer/installers": "2.2.0",
         "cweagans/composer-patches": "1.7.3",
-        "drupal/core-composer-scaffold": "11.0.0-alpha1",
-        "drupal/core-project-message": "11.0.0-alpha1",
-        "drupal/core-recommended": "11.0.0-alpha1",
-        "drupal/lagoon_logs": "d10-onwards-dev",
-        "drush/drush": "13.x-dev",
+        "drupal/core-composer-scaffold": "11.0.0-beta1",
+        "drupal/core-dev-pinned": "11.0.0-beta1",
+        "drupal/core-project-message": "11.0.0-beta1",
+        "drupal/core-recommended": "11.0.0-beta1",
+        "drupal/lagoon_logs": "3.0.1",
+        "drush/drush": "^13.0@beta",
         "zaporylie/composer-drupal-optimizations": "1.2.0"
-    },
-    "require-dev": {
-        "drupal/core-dev-pinned": "11.0.0-alpha1"
     },
     "conflict": {
         "drupal/drupal": "*"

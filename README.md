@@ -37,8 +37,8 @@ To see similar projects with additional services, please visit https://github.co
 3. Build and start the build images:
 
     ```bash
-    docker-compose up -d
-    docker-compose exec cli composer install
+    docker compose up -d
+    docker compose exec cli composer install
     ```
 
 4. Visit the new site @ `http://drupal10-base.docker.amazee.io`
