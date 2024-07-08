@@ -8,10 +8,10 @@ x-volumes:
 x-environment:
   &default-environment
     # Route that should be used locally, if you are using pygmy, this route *must* end with .docker.amazee.io
-    LAGOON_ROUTE: &default-url http://${COMPOSE_PROJECT_NAME:-drupal10-base}.docker.amazee.io
+    LAGOON_ROUTE: &default-url http://${COMPOSE_PROJECT_NAME:-drupalnext-base}.docker.amazee.io
     # Uncomment if you like to have the system behave like in production
     #LAGOON_ENVIRONMENT_TYPE: production
-    # Uncomment to enable Xdebug and then restart via `docker-compose up -d`
+    # Uncomment to enable Xdebug and then restart via `docker compose up -d`
     #XDEBUG_ENABLE: "true"
     # Uncomment to enable Xdebug logging to `/tmp/xdebug.log` within the
     # containers. This is useful for debugging Xdebug.
@@ -34,7 +34,7 @@ services:
     build:
       context: .
       dockerfile: lagoon/cli.dockerfile
-    image: &cli-image ${COMPOSE_PROJECT_NAME:-drupal10-base}-cli # this image will be reused as `CLI_IMAGE` in subsequent Docker builds
+    image: &cli-image ${COMPOSE_PROJECT_NAME:-drupalnext-base}-cli # this image will be reused as `CLI_IMAGE` in subsequent Docker builds
     labels:
       # Lagoon Labels
       lagoon.type: cli-persistent
@@ -59,10 +59,10 @@ services:
       lagoon.persistent: /app/web/sites/default/files/ # define where the persistent storage should be mounted too
       lando.type: nginx-drupal
     ports:
-      - "8080" # exposes the port 8080 with a random local port, find it with `docker-compose port nginx 8080`
+      - "8080" # exposes the port 8080 with a random local port, find it with `docker compose port nginx 8080`
     << : [*default-volumes, *default-user]
     depends_on:
-      - cli # basically just tells docker-compose to build the cli first
+      - cli # basically just tells docker compose to build the cli first
     environment:
       << : *default-environment # loads the defined environment variables from the top
       LAGOON_LOCALDEV_URL: *default-url
@@ -83,17 +83,17 @@ services:
       lando.type: php-fpm
     << : [*default-volumes, *default-user]
     depends_on:
-      - cli # basically just tells docker-compose to build the cli first
+      - cli # basically just tells docker compose to build the cli first
     environment:
       << : *default-environment # loads the defined environment variables from the top
 
   mariadb:
-    image: uselagoon/mariadb-10.6-drupal:latest
+    image: uselagoon/mariadb-10.11-drupal:latest
     labels:
       lagoon.type: mariadb
       lando.type: mariadb-drupal
     ports:
-      - "3306" # exposes the port 3306 with a random local port, find it with `docker-compose port mariadb 3306`
+      - "3306" # exposes the port 3306 with a random local port, find it with `docker compose port mariadb 3306`
     << : *default-user # uses the defined user from top
     environment:
       << : *default-environment
