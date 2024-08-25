@@ -25,7 +25,9 @@ tasks:
     #     service: cli
     - run:
         name: drush cr
-        command: drush -y cr
+        # This will only run if the database exists.
+        command: |
+          if [[ $(drush status --field=Database) == "Connected" ]]; then drush -y cr; fi
         service: cli
 
 environments:
