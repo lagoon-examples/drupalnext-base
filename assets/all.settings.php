@@ -14,6 +14,9 @@
 // folder outside this subfolder for an advanced security measure: '../config/sync'.
 $settings['config_sync_directory'] = '../config/sync';
 
+// This line is only required whilst the drupal/mysql57 module is used for backward compatibility.
+require DRUPAL_ROOT . '/modules/contrib/mysql57/settings.inc';
+
 if (getenv('LAGOON_ENVIRONMENT_TYPE') !== 'production') {
     /**
      * Skip file system permissions hardening.

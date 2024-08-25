@@ -25,7 +25,8 @@
         "drupal/core-project-message": "11.0.1",
         "drupal/core-recommended": "11.0.1",
         "drupal/lagoon_logs": "3.0.1",
-        "drush/drush": "^13.0@beta",
+        "drupal/mysql57": "1.0.0",
+        "drush/drush": "13.0.1",
         "zaporylie/composer-drupal-optimizations": "1.2.0"
     },
     "conflict": {
