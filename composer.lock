@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd2e511ae882a90a231cab19583436d4",
+    "content-hash": "280210718820f5a621901c5a3900526e",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -2160,16 +2160,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "11.0.6",
+            "version": "11.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "98eeb778f8bb6bb24725c281cf9f8ddab019e9db"
+                "reference": "c5e71f3eb04d3dfb93cfb74e38a876f9290e6462"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/98eeb778f8bb6bb24725c281cf9f8ddab019e9db",
-                "reference": "98eeb778f8bb6bb24725c281cf9f8ddab019e9db",
+                "url": "https://api.github.com/repos/drupal/core/zipball/c5e71f3eb04d3dfb93cfb74e38a876f9290e6462",
+                "reference": "c5e71f3eb04d3dfb93cfb74e38a876f9290e6462",
                 "shasum": ""
             },
             "require": {
@@ -2217,7 +2217,7 @@
                 "symfony/serializer": "^7.1",
                 "symfony/validator": "^7.1",
                 "symfony/yaml": "^7.1",
-                "twig/twig": "^3.14.0"
+                "twig/twig": "^3.14.2"
             },
             "conflict": {
                 "drush/drush": "<12.4.3"
@@ -2319,13 +2319,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/11.0.6"
+                "source": "https://github.com/drupal/core/tree/11.0.7"
             },
-            "time": "2024-11-07T08:13:19+00:00"
+            "time": "2024-11-12T09:49:41+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "11.0.6",
+            "version": "11.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -2369,22 +2369,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.0.6"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.0.7"
             },
             "time": "2024-08-22T14:31:26+00:00"
         },
         {
             "name": "drupal/core-dev-pinned",
-            "version": "11.0.6",
+            "version": "11.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev-pinned.git",
-                "reference": "969efe619c911607df3034ba5c8d9049961bf3cd"
+                "reference": "efe972bb9a7be2421130bff5cde56dae32ac30bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-dev-pinned/zipball/969efe619c911607df3034ba5c8d9049961bf3cd",
-                "reference": "969efe619c911607df3034ba5c8d9049961bf3cd",
+                "url": "https://api.github.com/repos/drupal/core-dev-pinned/zipball/efe972bb9a7be2421130bff5cde56dae32ac30bd",
+                "reference": "efe972bb9a7be2421130bff5cde56dae32ac30bd",
                 "shasum": ""
             },
             "require": {
@@ -2401,7 +2401,7 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "v1.0.0",
                 "doctrine/instantiator": "2.0.0",
                 "drupal/coder": "8.3.24",
-                "drupal/core": "11.0.6",
+                "drupal/core": "11.0.7",
                 "google/protobuf": "v3.25.4",
                 "justinrainbow/json-schema": "5.3.0",
                 "lullabot/mink-selenium2-driver": "v1.7.3",
@@ -2478,13 +2478,13 @@
             ],
             "description": "Pinned require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev-pinned/tree/11.0.6"
+                "source": "https://github.com/drupal/core-dev-pinned/tree/11.0.7"
             },
-            "time": "2024-11-07T08:13:19+00:00"
+            "time": "2024-11-12T09:49:41+00:00"
         },
         {
             "name": "drupal/core-project-message",
-            "version": "11.0.6",
+            "version": "11.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -2519,22 +2519,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/11.0.6"
+                "source": "https://github.com/drupal/core-project-message/tree/11.0.7"
             },
             "time": "2023-07-24T07:55:25+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "11.0.6",
+            "version": "11.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "148b15d997449dde3fb577abd4ca18ae19a885f1"
+                "reference": "777942228b60193ca58e96f15aa3d094eb5ae305"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/148b15d997449dde3fb577abd4ca18ae19a885f1",
-                "reference": "148b15d997449dde3fb577abd4ca18ae19a885f1",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/777942228b60193ca58e96f15aa3d094eb5ae305",
+                "reference": "777942228b60193ca58e96f15aa3d094eb5ae305",
                 "shasum": ""
             },
             "require": {
@@ -2543,7 +2543,7 @@
                 "doctrine/annotations": "~2.0.1",
                 "doctrine/deprecations": "~1.1.3",
                 "doctrine/lexer": "~2.1.1",
-                "drupal/core": "11.0.6",
+                "drupal/core": "11.0.7",
                 "egulias/email-validator": "~4.0.2",
                 "guzzlehttp/guzzle": "~7.9.2",
                 "guzzlehttp/promises": "~2.0.3",
@@ -2591,7 +2591,7 @@
                 "symfony/var-dumper": "~v7.1.3",
                 "symfony/var-exporter": "~v7.1.2",
                 "symfony/yaml": "~v7.1.1",
-                "twig/twig": "~v3.14.0"
+                "twig/twig": "~v3.14.2"
             },
             "conflict": {
                 "webflo/drupal-core-strict": "*"
@@ -2603,9 +2603,9 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/11.0.6"
+                "source": "https://github.com/drupal/core-recommended/tree/11.0.7"
             },
-            "time": "2024-11-07T08:13:19+00:00"
+            "time": "2024-11-12T09:49:41+00:00"
         },
         {
             "name": "drupal/lagoon_logs",
