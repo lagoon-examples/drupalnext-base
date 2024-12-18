@@ -88,7 +88,7 @@ services:
       << : *default-environment # loads the defined environment variables from the top
 
   mariadb:
-    image: uselagoon/mariadb-10.11-drupal:latest
+    image: uselagoon/mysql-8.0:latest
     labels:
       lagoon.type: mariadb
       lando.type: mariadb-drupal
@@ -97,6 +97,9 @@ services:
     << : *default-user # uses the defined user from top
     environment:
       << : *default-environment
+      MYSQL_DATABASE: drupal
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: drupal
     volumes:
       - db:/var/lib/mysql
 
