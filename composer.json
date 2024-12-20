@@ -26,7 +26,8 @@
         "drupal/core-recommended": "11.1.0",
         "drupal/lagoon_logs": "3.0.1",
         "drupal/mysql57": "1.0.0",
-        "drush/drush": "13.3.3"
+        "drush/drush": "13.3.3",
+        "mglaman/composer-drupal-lenient": "1.0.7"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -41,6 +42,7 @@
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
+            "mglaman/composer-drupal-lenient": true,
             "php-http/discovery": true,
             "phpstan/extension-installer": true,
             "tbachert/spi": true
