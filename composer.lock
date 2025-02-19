@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2fa153efe62cf4367c7e0be973c56afd",
+    "content-hash": "7e723f81acf0bcc8a9be11219c6243e4",
     "packages": [
         {
             "name": "amazeeio/drupal_integrations",
@@ -2218,16 +2218,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "11.1.2",
+            "version": "11.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "82b6dbe201bbff477283a286f0f09890a94c8e74"
+                "reference": "d856ab80fd902a26a740977a02a161f4e39d36de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/82b6dbe201bbff477283a286f0f09890a94c8e74",
-                "reference": "82b6dbe201bbff477283a286f0f09890a94c8e74",
+                "url": "https://api.github.com/repos/drupal/core/zipball/d856ab80fd902a26a740977a02a161f4e39d36de",
+                "reference": "d856ab80fd902a26a740977a02a161f4e39d36de",
                 "shasum": ""
             },
             "require": {
@@ -2380,13 +2380,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/11.1.2"
+                "source": "https://github.com/drupal/core/tree/11.1.3"
             },
-            "time": "2025-02-05T22:47:05+00:00"
+            "time": "2025-02-18T22:40:36+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "11.1.2",
+            "version": "11.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -2430,22 +2430,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.1.2"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.1.3"
             },
             "time": "2024-11-02T22:49:15+00:00"
         },
         {
             "name": "drupal/core-dev-pinned",
-            "version": "11.1.2",
+            "version": "11.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev-pinned.git",
-                "reference": "fe1f36e7c089d3a283fef36f1b88c9af219c2171"
+                "reference": "191cb599d899da90f71d72b277890e332a501742"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-dev-pinned/zipball/fe1f36e7c089d3a283fef36f1b88c9af219c2171",
-                "reference": "fe1f36e7c089d3a283fef36f1b88c9af219c2171",
+                "url": "https://api.github.com/repos/drupal/core-dev-pinned/zipball/191cb599d899da90f71d72b277890e332a501742",
+                "reference": "191cb599d899da90f71d72b277890e332a501742",
                 "shasum": ""
             },
             "require": {
@@ -2463,7 +2463,7 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "v1.0.0",
                 "doctrine/instantiator": "2.0.0",
                 "drupal/coder": "8.3.26",
-                "drupal/core": "11.1.2",
+                "drupal/core": "11.1.3",
                 "google/protobuf": "v4.29.1",
                 "justinrainbow/json-schema": "5.3.0",
                 "lullabot/mink-selenium2-driver": "v1.7.4",
@@ -2544,13 +2544,13 @@
             ],
             "description": "Pinned require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev-pinned/tree/11.1.2"
+                "source": "https://github.com/drupal/core-dev-pinned/tree/11.1.3"
             },
-            "time": "2025-02-05T22:47:05+00:00"
+            "time": "2025-02-18T22:40:36+00:00"
         },
         {
             "name": "drupal/core-project-message",
-            "version": "11.1.2",
+            "version": "11.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -2585,22 +2585,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/11.1.2"
+                "source": "https://github.com/drupal/core-project-message/tree/11.1.3"
             },
             "time": "2023-07-24T07:55:25+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "11.1.2",
+            "version": "11.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "30a19d4632e9a94a576fdd3fb9cb5daf0b25b0c9"
+                "reference": "03dbc777454f415c8f47c6abcadf1afd146b8144"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/30a19d4632e9a94a576fdd3fb9cb5daf0b25b0c9",
-                "reference": "30a19d4632e9a94a576fdd3fb9cb5daf0b25b0c9",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/03dbc777454f415c8f47c6abcadf1afd146b8144",
+                "reference": "03dbc777454f415c8f47c6abcadf1afd146b8144",
                 "shasum": ""
             },
             "require": {
@@ -2609,7 +2609,7 @@
                 "doctrine/annotations": "~2.0.2",
                 "doctrine/deprecations": "~1.1.3",
                 "doctrine/lexer": "~2.1.1",
-                "drupal/core": "11.1.2",
+                "drupal/core": "11.1.3",
                 "egulias/email-validator": "~4.0.2",
                 "guzzlehttp/guzzle": "~7.9.2",
                 "guzzlehttp/promises": "~2.0.4",
@@ -2671,9 +2671,9 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/11.1.2"
+                "source": "https://github.com/drupal/core-recommended/tree/11.1.3"
             },
-            "time": "2025-02-05T22:47:05+00:00"
+            "time": "2025-02-18T22:40:36+00:00"
         },
         {
             "name": "drupal/lagoon_logs",
@@ -7647,16 +7647,16 @@
         },
         {
             "name": "revolt/event-loop",
-            "version": "v1.0.6",
+            "version": "v1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/revoltphp/event-loop.git",
-                "reference": "25de49af7223ba039f64da4ae9a28ec2d10d0254"
+                "reference": "09bf1bf7f7f574453efe43044b06fafe12216eb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/revoltphp/event-loop/zipball/25de49af7223ba039f64da4ae9a28ec2d10d0254",
-                "reference": "25de49af7223ba039f64da4ae9a28ec2d10d0254",
+                "url": "https://api.github.com/repos/revoltphp/event-loop/zipball/09bf1bf7f7f574453efe43044b06fafe12216eb3",
+                "reference": "09bf1bf7f7f574453efe43044b06fafe12216eb3",
                 "shasum": ""
             },
             "require": {
@@ -7713,9 +7713,9 @@
             ],
             "support": {
                 "issues": "https://github.com/revoltphp/event-loop/issues",
-                "source": "https://github.com/revoltphp/event-loop/tree/v1.0.6"
+                "source": "https://github.com/revoltphp/event-loop/tree/v1.0.7"
             },
-            "time": "2023-11-30T05:34:44+00:00"
+            "time": "2025-01-25T19:27:39+00:00"
         },
         {
             "name": "sebastian/cli-parser",
