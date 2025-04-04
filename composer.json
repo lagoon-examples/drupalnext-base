@@ -26,7 +26,7 @@
         "drupal/core-recommended": "11.1.6",
         "drupal/lagoon_logs": "3.0.1",
         "drupal/mysql57": "1.0.0",
-        "drush/drush": "13.4.0",
+        "drush/drush": "13.5.0",
         "mglaman/composer-drupal-lenient": "1.0.7"
     },
     "conflict": {
