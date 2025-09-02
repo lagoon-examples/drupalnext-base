@@ -1,0 +1,15 @@
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: lagoon/nginx.dockerfile
+      args:
+        CLI_IMAGE: ${COMPOSE_PROJECT_NAME:-drupalnext-base}-cli
+
+  php:
+    build:
+      context: .
+      dockerfile: lagoon/php.dockerfile
+      args:
+        CLI_IMAGE: ${COMPOSE_PROJECT_NAME:-drupalnext-base}-cli
+
