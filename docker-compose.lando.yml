@@ -5,6 +5,7 @@ services:
       dockerfile: lagoon/nginx.dockerfile
       args:
         CLI_IMAGE: ${COMPOSE_PROJECT_NAME:-drupalnext-base}-cli
+    additional_contexts: null
 
   php:
     build:
@@ -12,4 +13,4 @@ services:
       dockerfile: lagoon/php.dockerfile
       args:
         CLI_IMAGE: ${COMPOSE_PROJECT_NAME:-drupalnext-base}-cli
-
+    additional_contexts: null
