@@ -27,7 +27,7 @@
         "drupal/lagoon_logs": "3.0.1",
         "drupal/mysql57": "1.0.0",
         "drush/drush": "13.7.1",
-        "mglaman/composer-drupal-lenient": "1.0.7"
+        "mglaman/composer-drupal-lenient": "2.0.0"
     },
     "conflict": {
         "drupal/drupal": "*"
