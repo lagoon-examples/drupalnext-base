@@ -21,7 +21,6 @@
         "composer/installers": "2.3.0",
         "cweagans/composer-patches": "2.0.0",
         "drupal/core-composer-scaffold": "11.3.8",
-        "drupal/core-dev-pinned": "11.3.8",
         "drupal/core-project-message": "11.3.8",
         "drupal/core-recommended": "11.3.8",
         "drupal/lagoon_logs": "3.0.1",
@@ -70,5 +69,8 @@
                 "web-root": "web/"
             }
         }
+    },
+    "require-dev": {
+        "drupal/core-dev": "11.3.8"
     }
 }
