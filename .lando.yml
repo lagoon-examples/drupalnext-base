@@ -2,5 +2,19 @@ name: drupalnext-base
 recipe: lagoon
 config:
   flavor: drupal
-  build:
-    - composer install
+  webroot: web
+  compose:
+    - docker-compose.lando.yml
+
+events:
+  post-start:
+    - |
+      if [ ! -d vendor ]; then
+        echo "Running composer install..."
+        composer install
+      else
+        echo "Vendor folder exists; skipping composer install."
+      fi
+
+
+
